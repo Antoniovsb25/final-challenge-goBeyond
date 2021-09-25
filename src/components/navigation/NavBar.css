@@ -1,0 +1,26 @@
+.hidden-menu {
+  padding: 1rem 0;
+  display: block;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.flex-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.nav-item {
+  padding: 0.5rem 0;
+  text-align: center;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  line-height: 1.15;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}

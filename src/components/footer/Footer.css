@@ -2,31 +2,29 @@
    font-size: 0.75rem;
    display: flex;
    flex-direction: column;
-   box-sizing: border-box; 
+   box-sizing: border-box;
+   width: 100%;
+   color: #000; 
 }
 
 .footer-left-column {
-    position: relative;
-    padding: 2rem;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center; 
+    padding: 2rem 2rem;
 }
 
 .footer-right-column {
     background: #f4f4f4;
-    padding: 2rem 0;
+    padding: 2rem 2rem;
     display: flex;
+    width: 100%;
     flex-direction: column;
     box-sizing: border-box;
     font-size: 0.75rem;
 }
 
 .location {
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     width: 100%;
     box-sizing: border-box;
     display: block;
@@ -38,10 +36,7 @@
     display: block;
     font-size: 1.5rem;
     line-height: 1.15;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    
 }
 
 .location > p {

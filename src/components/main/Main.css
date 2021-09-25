@@ -1,129 +1,17 @@
 .main {
-  display: flex;
-  background-color: #000;
-  color: #fff;
-  flex-direction: column;
-  padding: 0 2rem;
-}
-
-.left-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.left-column > h2 {
-  text-transform: capitalize;
-  box-sizing: border-box;
-  font-size: 2.5rem;
-  line-height: 1;
-}
-
-.button-see-more {
-  cursor: pointer;
-  transition: opacity 0.15s ease-in;
-  background-color: #fff;
-  color: #000;
-  text-transform: lowercase;
-  text-decoration: none;
-  border-radius: 50px;
-  height: 50px;
-  max-width: 195px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: auto;
-  margin-bottom: .5rem;
-}
-
-.see-more-text {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 100;
-    margin-right: .5rem;
-}
-
-.right-column {
-  display: block;
-  box-sizing: border-box;
-  color: #fff;
-  line-height: 1.15;
-  margin-top: 2rem;
-}
-
-.current-image {
-    box-sizing: border-box;
-    display: block;
-}
-
-.container {
-    display: block;
-    overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
-    line-height: 1.15;
-}
-
-.container-content {
-    display: block;
-    box-sizing: border-box;
-    padding-top: 59.292%;
-}
-
-.imagem {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    box-sizing: border-box;
-    border: none;
-    margin: auto;
-    display: block;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-}
-
-.thumbs {
-    margin-top: 17px;
     display: flex;
-    box-sizing: border-box;
-}
+    background-color: #000;
+    color: #fff;
+    flex-direction: column;
+    padding: 0 2rem;
+  }
 
-.thumb-item {
-    border: 3px solid #000;
-    border-radius: 2.5px;
-    overflow: hidden;
-    width: 25%;
-    display: block;
-}
-
-.container-other-images {
-    display: block;
-    overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
-    margin: 0px;
-}
-
-.content-other {
-    padding-top: 60%;
-    display: block;
-    box-sizing: border-box;
-}
-
-.other-imagem {
-    position: absolute;
-    inset: 0px;
-    box-sizing: border-box;
-    border: none;
-    margin: auto;
-    display: block;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-}
+  @media (min-width: 60em) {
+      .main {
+          display: flex;
+          padding-left: 4rem;
+          padding-right: 4rem;
+          padding-bottom: 2rem;
+          flex-direction: row;
+      }
+  }
