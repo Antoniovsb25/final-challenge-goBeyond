@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from '../navigation/NavBar'
+import Hamburguer from './Hamburguer'
 import './Header.css'
 
 const Header = () => {
@@ -7,7 +8,7 @@ const Header = () => {
         <header className="header">
             <div className="logo-and-hamburguer">
                 <h1>CoreBiz</h1>
-                <button>Add</button>
+                <Hamburguer />
             </div>
             <NavBar />
         </header>

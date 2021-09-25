@@ -22,5 +22,22 @@
 
 a {
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
     color: #fff;
+}
+
+@media (min-width: 60em) {
+    .hidden-menu {
+        width: 50%;
+        padding-right: 1rem;
+    }
+    .flex-list {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .nav-item {
+        border-bottom-style: none;
+    }
 }

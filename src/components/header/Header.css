@@ -12,3 +12,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+@media (min-width: 60em) {
+    .header {
+        flex-direction: row;
+    }
+    .logo-and-hamburguer {
+        width: 50%;
+    }
+}

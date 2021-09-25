@@ -1,0 +1,19 @@
+.bars-container {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bars {
+    height: 10px;
+    width: 30px;
+    border-bottom: 1px solid #fff;
+}
+
+@media (min-width: 60em) {
+    .bars-container {
+        display: none;
+    }
+}
