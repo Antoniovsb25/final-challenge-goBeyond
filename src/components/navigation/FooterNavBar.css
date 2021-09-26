@@ -1,5 +1,7 @@
 .footer-menu {
     padding: 1rem 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
     display: block;
     overflow: hidden;
     box-sizing: border-box;
@@ -16,14 +18,21 @@
   
   .footer-item {
     padding: 0.5rem 0;
-    text-align: center;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     line-height: 1.15;
+    text-align: center;
   }
   
   .footer-item > a {
       text-decoration: none;
+      font-size: 1rem;
       color: #000;
+  }
+
+  @media (min-width: 60em) {
+      .footer-item {
+          text-align: left;
+      }
   }
   

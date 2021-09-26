@@ -1,87 +1,92 @@
 .footer {
-   font-size: 0.75rem;
-   display: flex;
-   flex-direction: column;
-   box-sizing: border-box;
-   width: 100%;
-   color: #000; 
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  color: #000;
 }
 
 .footer-left-column {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+
+.logo-social-media {
+  text-align: center;
 }
 
 .footer-right-column {
-    background: #f4f4f4;
-    padding: 2rem 2rem;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    box-sizing: border-box;
-    font-size: 0.75rem;
+  background: #f4f4f4;
+  padding: 2rem 2rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 0.75rem;
 }
 
 .location {
-    padding: 2rem 0;
-    width: 100%;
-    box-sizing: border-box;
-    display: block;
-    font-size: 0.75rem;
+  padding: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  font-size: 0.75rem;
 }
 
 .location > h2 {
-    box-sizing: border-box;
-    display: block;
-    font-size: 1.5rem;
-    line-height: 1.15;
-    
+  box-sizing: border-box;
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.15;
 }
 
 .location > p {
-    display: block;
-    font-size: 0.75rem;
-    box-sizing: border-box;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  display: block;
+  font-size: 0.75rem;
+  box-sizing: border-box;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 @media (min-width: 60em) {
-    .footer {
-        flex-direction: row;
-    }
+  .footer {
+    flex-direction: row;
+  }
 
-    .footer-left-column {
-        width: 33%;
-        flex-direction: row;
-        padding-left: 2rem;
-        padding-bottom: 0.5rem;
-    }
+  .footer-left-column {
+    width: 40%;
+    flex-direction: row;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+  }
 
-    .logo-social-media {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-    }
-    .footer-right-column {
-        width: 55%;
-        margin-left: auto;
-        padding: 2rem 4rem 0.5rem 4rem;
-        flex-direction: row;
-        box-sizing: border-box;
-    }
-    .location {
-        margin-right: 2rem;
-        padding-left: 0;
-        padding-right: 0;
-        width: 25%;
-        box-sizing: border-box;
-        display: block;
-        font-size: .75rem;
-    }
+  .logo-social-media {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  .footer-right-column {
+    width: 100%;
+    margin-left: 1rem;
+    padding: 1rem 4rem 0.5rem 4rem;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+  .location {
+    margin-right: 2rem;
+    padding: 1rem 0;
+    width: 25%;
+    box-sizing: border-box;
+    display: block;
+    font-size: 0.75rem;
+  }
 }

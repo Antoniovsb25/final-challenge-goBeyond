@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+.esconder-menu {
+    padding: 1rem 0;
+    display: none;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
 .flex-list {
   list-style-type: none;
   display: flex;

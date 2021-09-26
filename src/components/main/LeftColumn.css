@@ -41,7 +41,7 @@
 @media (min-width: 768px) {
   .left-column {
     width: 35%;
-    padding-right: 8rem;
+    padding-right: 2rem;
     display: flex;
     flex-direction: column;
   }

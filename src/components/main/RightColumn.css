@@ -85,9 +85,9 @@
 }
 
 @media (min-width: 768px) {
-    .right-column {
-        width: 65%;
-        margin-top: 0;
-        display: block;
-    }
+  .right-column {
+    width: 65%;
+    margin-top: 0;
+    display: block;
+  }
 }

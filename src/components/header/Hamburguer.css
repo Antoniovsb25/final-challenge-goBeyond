@@ -9,7 +9,7 @@
 .bars {
     height: 10px;
     width: 30px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 3px solid #fff;
 }
 
 @media (min-width: 60em) {

@@ -1,0 +1,34 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.float {
+    box-sizing: border-box;
+    display:flex;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: calc(100% - 60px);
+    align-self: center;
+}
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    width: 10px;
+    margin: 10px;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 5px;
+}

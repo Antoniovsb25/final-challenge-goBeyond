@@ -1,13 +1,15 @@
 import React from "react";
 import './Footer.css'
+import SocialMedia from './SocialMedia'
 import FooterNavBar from '../navigation/FooterNavBar'
 
 const FooterLeftColumn = () => {
   return (
     <section className="footer-left-column">
       <div className="logo-social-media">
-        <img src="" alt="logo" />
+        <h3>Corebiz.</h3>
         <p>direitos reservados, corebiz 2021</p>
+        <SocialMedia />
       </div>
       <FooterNavBar />
     </section>

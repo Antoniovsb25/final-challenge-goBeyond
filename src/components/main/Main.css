@@ -13,5 +13,6 @@
           padding-right: 4rem;
           padding-bottom: 2rem;
           flex-direction: row;
+          position: relative;
       }
   }
