@@ -1,115 +1,78 @@
+.column-wrapper {
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
 .left-column {
   display: flex;
   flex-direction: column;
-}
-
-.left-column > h2 {
-  margin-top: 10px;
-  text-transform: capitalize;
-  box-sizing: border-box;
-  font-size: 42px;
-  line-height: 1;
-}
-
-.button-see-more {
-  cursor: pointer;
-  transition: opacity 0.5s ease-in;
-  background-color: #fff;
-  color: #000;
-  text-transform: lowercase;
-  text-decoration: none;
-  border-radius: 50px;
-  height: 50px;
-  max-width: 195px;
+  justify-content: space-between;
+  border: 1px solid #909;
   width: 100%;
+}
+
+.title-and-button {
+  border: 1px solid yellow;
+  margin-top: 1rem;
+}
+
+.see-more {
+  margin-top: 1rem;
+  align-self: flex-start;
+  background-color: #fff;
+  border-radius: 30px;
+  border: none;
+  padding: 1rem 3rem;
+  font-weight: bold;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.card-container {
+  border: 1px solid red;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  margin-right: auto;
-  margin-bottom: 0.5rem;
-  margin-top: 20px;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
-.button-see-more:hover {
-  opacity: 0.5;
+.card {
+  width: 80px;
+  height: 50px;
+  margin: 3px;
 }
 
-.see-more-text {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: bold;
-  margin-right: 0.5rem;
+.card-active {
+  border: 4px solid #fff;
+  width: 80px;
+  height: 50px;
+  margin: 3px;
 }
-.other-images-mobile {
-    display: none;
-}
-.thumbs {
-    margin-top: 17px;
-    display: flex;
-    box-sizing: border-box;
-  }
-  
-  .thumb-item {
-    border: 3px solid #000;
-    border-radius: 2.5px;
-    overflow: hidden;
-    width: 25%;
-    display: block;
-  }
-  
-  .container-other-images {
-    display: block;
-    overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
-    margin: 0px;
-  }
-  
-  .content-other {
-    padding-top: 60%;
-    display: block;
-    box-sizing: border-box;
-  }
-  
-  .other-imagem {
-    position: absolute;
-    inset: 0px;
-    box-sizing: border-box;
-    border: none;
-    margin: auto;
-    display: block;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-  }
 
-@media (min-width: 950px) {
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .column-wrapper {
+    flex-direction: row;
+  }
+  .card-container {
+    justify-content: flex-start;
+  }
   .left-column {
-    width: 35%;
-    padding-right: 2rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .left-column > h2 {
-    box-sizing: border-box;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    text-transform: capitalize;
-    font-size: 48px;
-  }
-  .button-see-more {
-    transition: color 0.12s ease-in;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    height: 50px;
-    max-width: 195px;
-    width: 100%;
-    margin-bottom: 0.5rem;
-    margin-right: auto;
+    width: 60%;
   }
 }
