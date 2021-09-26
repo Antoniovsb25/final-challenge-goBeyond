@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import './LeftColumn.css'
 
-const LeftColumn = () => {
+const LeftColumn = (props) => {
+
   return (
     <section className="left-column">
-      <h2>A CoreBiz atua em toda jornada digital do usuário.</h2>
+      <h2>{props.text}</h2>
       <a
         href="https://www.corebiz.ag/pt/"
         target="_blank"

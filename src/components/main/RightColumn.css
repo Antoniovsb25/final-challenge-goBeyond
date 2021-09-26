@@ -4,6 +4,8 @@
   color: #fff;
   line-height: 1.15;
   margin-top: 2rem;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .current-image {
@@ -48,14 +50,6 @@
   box-sizing: border-box;
 }
 
-.thumb-item {
-  border: 3px solid #000;
-  border-radius: 2.5px;
-  overflow: hidden;
-  width: 25%;
-  display: block;
-}
-
 .container-other-images {
   display: block;
   overflow: hidden;
@@ -70,7 +64,7 @@
   box-sizing: border-box;
 }
 
-.other-imagem {
+.other-imagem-mobile {
   position: absolute;
   inset: 0px;
   box-sizing: border-box;
@@ -84,10 +78,15 @@
   border-radius: 10px;
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 950px) {
   .right-column {
     width: 65%;
     margin-top: 0;
     display: block;
   }
+  .other-images {
+      display: block;
+  }
+
 }

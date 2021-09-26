@@ -1,18 +1,33 @@
 .main {
-    display: flex;
-    background-color: #000;
-    color: #fff;
-    flex-direction: column;
-    padding: 0 2rem;
-  }
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  flex-direction: column;
+  padding: 0 2rem;
+  position: relative;
+}
 
-  @media (min-width: 60em) {
-      .main {
-          display: flex;
-          padding-left: 4rem;
-          padding-right: 4rem;
-          padding-bottom: 2rem;
-          flex-direction: row;
-          position: relative;
-      }
+.other-imagem-clicked {
+  border: 5px solid #fff;
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  margin: auto;
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+@media (min-width: 60em) {
+  .main {
+    display: flex;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+    flex-direction: row;
+    position: relative;
   }
+}
