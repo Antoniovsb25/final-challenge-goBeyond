@@ -1,22 +1,54 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import RightColumn from "./RightColumn";
 import "./LeftColumn.css";
 import DUMMY_DATA from "../../dummyData";
 
 const LeftColumn = () => {
   const [selectId, setSelectId] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadedData, setLoadedData] = useState([]);
+
+  useEffect(() => {
+    setIsLoading(true);
+    setSelectId(0)
+    fetch(
+      `https://my-json-server.typicode.com/Antoniovsb25/api-finalchallenge-gobeyond/dados`
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setIsLoading(false);
+        setLoadedData(data);
+        console.log(data[selectId])
+      });
+  }, []);
+
   const handleBorder1 = () => {
     setSelectId(0);
+    console.log(loadedData[0]);
   };
   const handleBorder2 = () => {
     setSelectId(1);
+    console.log(loadedData[1]);
   };
   const handleBorder3 = () => {
     setSelectId(2);
+    console.log(loadedData[2]);
   };
   const handleBorder4 = () => {
     setSelectId(3);
+    console.log(loadedData[3]);
   };
+
+  if (isLoading) {
+    return (
+      <section>
+        <p className="loading-msg">Carregando...</p>
+      </section>
+    );
+  }
+
   return (
     <div className="column-wrapper">
       <section className="left-column">
@@ -58,7 +90,7 @@ const LeftColumn = () => {
           </div>
         </div>
       </section>
-      <RightColumn bigCardId={selectId} />
+      <RightColumn bigCardId={selectId} arrivedData={loadedData}/>
     </div>
   );
 };

@@ -3,8 +3,8 @@ import "./RightColumn.css";
 import DUMMY_DATA from "../../dummyData";
 
 const RightColumn = (props) => {
-  let wichCard = props.bigCardId;
-  let DUMMY_DATA_FILTERED = DUMMY_DATA.filter(element => element.id === wichCard)
+  const wichCard = props.bigCardId;
+  const DUMMY_DATA_FILTERED = DUMMY_DATA.filter(element => element.id === wichCard)
   const array = [];
 
   for (const key in DUMMY_DATA_FILTERED){

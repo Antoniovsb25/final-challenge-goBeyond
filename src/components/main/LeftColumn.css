@@ -6,7 +6,11 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.loading-msg {
+    font-size: 30px;
 }
 
 .left-column {
@@ -29,7 +33,7 @@
   background-color: #fff;
   padding: 10px 45px;
   border-radius: 30px;
-  font-size: 23px;
+  font-size: 20px;
   transition: 0.3s ease-in-out;
 }
 
@@ -94,7 +98,7 @@ img {
 
 @media (min-width: 1110px) {
   .title {
-    font-size: 60px;
+    font-size: 55px;
     font-weight: bold;
   }
 }
