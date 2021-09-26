@@ -12,14 +12,15 @@
 .left-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid #909;
+  justify-content: center;
+  /*border: 1px solid #909;*/
   width: 100%;
 }
 
 .title-and-button {
-  border: 1px solid yellow;
-  margin-top: 1rem;
+  /*border: 1px solid yellow;*/
+  padding: 1rem;
+  margin-bottom: .5rem;
 }
 
 .see-more {
@@ -30,34 +31,36 @@
   border: none;
   padding: 1rem 3rem;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .title {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: bold;
 }
 
 .card-container {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
   width: 100%;
+  margin-top: .5rem;
 }
 
 .card {
-  width: 80px;
-  height: 50px;
-  margin: 3px;
+  max-width: 180px;
+  max-height: 100px;
+  margin: 10px;
 }
 
 .card-active {
   border: 4px solid #fff;
-  width: 80px;
-  height: 50px;
-  margin: 3px;
+  border-radius: 10px;
+  max-width: 180px;
+  max-height: 90px;
+  margin: 10px;
 }
 
 img {
@@ -65,14 +68,30 @@ img {
   height: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 980px) {
   .column-wrapper {
     flex-direction: row;
   }
+  .title-and-button {
+      margin-bottom: 2rem;
+      padding: 2rem 1rem;
+  }
   .card-container {
     justify-content: flex-start;
+    position: static;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem 1rem;
   }
   .left-column {
-    width: 60%;
+    width: 40%;
   }
+  
+}
+
+@media (min-width: 1110px){
+    .title {
+        font-size: 60px;
+        font-weight: bold;
+    }
 }
