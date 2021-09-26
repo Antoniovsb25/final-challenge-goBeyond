@@ -3,6 +3,7 @@
   display: block;
   overflow: hidden;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .hidden-menu2 {

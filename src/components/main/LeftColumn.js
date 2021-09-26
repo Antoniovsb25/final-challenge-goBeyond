@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import RightColumn from './RightColumn'
+import RightColumn from "./RightColumn";
 import "./LeftColumn.css";
 import DUMMY_DATA from "../../dummyData";
 
@@ -22,7 +22,14 @@ const LeftColumn = () => {
       <section className="left-column">
         <div className="title-and-button">
           <h1 className="title">{DUMMY_DATA[selectId].title}</h1>
-          <button className="see-more">veja mais</button>
+          <a
+            href="https://www.corebiz.ag/pt/"
+            target="_blank"
+            rel="noreferrer"
+            className="see-more"
+          >
+            Veja Mais
+          </a>
         </div>
         <div className="card-container">
           <div
@@ -51,7 +58,7 @@ const LeftColumn = () => {
           </div>
         </div>
       </section>
-      <RightColumn bigCardId={selectId}/>
+      <RightColumn bigCardId={selectId} />
     </div>
   );
 };

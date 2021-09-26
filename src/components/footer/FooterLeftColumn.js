@@ -7,7 +7,7 @@ const FooterLeftColumn = () => {
   return (
     <section className="footer-left-column">
       <div className="logo-social-media">
-        <h3>Corebiz.</h3>
+        <h3>corebiz.</h3>
         <p>direitos reservados, corebiz 2021</p>
         <SocialMedia />
       </div>

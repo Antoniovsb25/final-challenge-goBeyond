@@ -5,7 +5,7 @@ const NavBar = (props) => {
     const menuFechar = props.classState
   return (
       <>
-        <nav className={menuFechar ? 'esconder-menu' : 'hidden-menu'}>
+        <nav className={menuFechar ? 'hidden-menu' : 'esconder-menu'}>
             <ul className="flex-list">
                 <li className="nav-item"><a href="https://www.corebiz.ag/pt/about/" target="_blank" rel="noreferrer">A CoreBiz</a></li>
                 <li className="nav-item"><a href="https://www.corebiz.ag/pt/#framework-title" target="_blank" rel="noreferrer">Serviços</a></li>
