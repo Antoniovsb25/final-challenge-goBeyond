@@ -1,21 +1,15 @@
 import React from "react";
 import "./RightColumn.css";
-import DUMMY_DATA from "../../dummyData";
 
 const RightColumn = (props) => {
   const wichCard = props.bigCardId;
-  const DUMMY_DATA_FILTERED = DUMMY_DATA.filter(element => element.id === wichCard)
-  const array = [];
-
-  for (const key in DUMMY_DATA_FILTERED){
-    array.push(DUMMY_DATA_FILTERED[key]);
-  }
+  const array = props.arrivedData
 
   return (
     <section className="right-column">
       <div className="big-card-container">
         <div className="big-card">
-          <img src={array[0].imgUrl} alt="bigcard" />
+          <img src={array[wichCard]?.imgUrl} alt="bigcard" />
         </div>
       </div>
     </section>
